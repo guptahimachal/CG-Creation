@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Prata&display=swap');
+html,body{
+    overflow-x: hidden;
+}
+/* TITLE */
+#title{
+    /* BG image of opening  */
+    background-image: url("https://image.freepik.com/free-photo/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background_41470-1528.jpg");
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Background color of Menu */
+.navbar-custom{
+    /* Currently not used */
+    background-color: rgb(32, 32, 32);
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand{
+    color: rgb(229, 255, 0);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link ,
+.navbar-custom button{
+    color: white;
+}
+
+.nav-link , .dropdown-item{
+    font-family: 'Prata', serif;
+    font-size: 0.88rem;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.dropdown-menu{
+    background: transparent;
+    display: block;
+
+    transform-origin: top;
+
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    transition: all 0.3s;
+}
+
+.dropdown-menu.show{
+    display: block;
+    height: 120px;
+    border: 1px solid rgb(126, 125, 125);
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: all 0.5s;
+}
+
+
+.navbar-brand{
+    font-size: 4rem;
+}
+
+
+/* CONTENT */
+.front-content{
+    /* What are we and paragraph */
+    padding: 5% 10% 26% 25%;
+}
+
+/* PROJECT */
+.container-fluid{
+    font-size: 3.8rem;
+    padding: 0;
+}
+
+.project-title:link, .project-title:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+
+.article-container{
+    /* It contains link and bg image of each project section*/
+    width: 100%; /* width of container */
+    height: 75vh; /* 3/4th height of container */
+    overflow: hidden; /* To hide extra when zoom */
+    position: relative;
+}
+/* Refer's to individual div of row which have bg image of project section */
+.name, .place, .animal, .thing {
+    margin: 0;    /* To make the div extend full screen */
+    width: 100%;  /* To make this take full space of parent article section */
+    height: 100%; /* To make this take full space of parent article section */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 3s ease;
+}
+
+/* Adding bg images to all 4 divs */
+.name{
+    background-image: url("/images/name.jpg");
+}
+.place{
+    background-image: url("/images/place.jpg");
+}
+.animal{
+    background-image: url("/images/animal.jpg");
+}
+.thing{
+    background-image: url("/images/thing.jpg");
+}
+.name:hover, .place:hover, .animal:hover, .thing:hover{
+    transform: scale(1.1);
+}
+.project-title{
+    position: absolute; /* To make it out of flow as we want link to be above the article-container */ 
+    /* To make it centre vertically */
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+/* Making project's href margin left and right aligned alternate */
+.name_link, .animal_link{
+    right: 0;
+    padding-right: 2%;
+}
+.place_link, .thing_link{
+    left: 0;
+    padding-left: 2%;
+}
+
+/* Making project's href margin centre at mobile screen */
+@media (max-width:993px) {
+    .project-title{
+        left: 50%;
+        right: inherit;
+        transform: translate(-50%,-50%);
+    }   
+}
