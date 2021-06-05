@@ -98,6 +98,23 @@ html,body{
     margin-top: 13.802vh;
 }
 
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #93947b, #e7e9bb); */
+    /* backdrop-filter: blur(80px); */
+}
+#about h1{
+    font-family: 'Cinzel', serif;
+    word-spacing: 1rem;
+    /* Making font size 3rem/48px for 1366px width */
+    font-size: 10.513vw;
+    filter: drop-shadow(9px 9px 3px rgba(0, 0, 0, 0.274));
+    
+}
+
 /* Mobile Only */
 @media only screen and (max-width:700px){
     /* Three big headings (of landing Page)*/
