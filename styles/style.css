@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Crimson+Text&family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Text&family=Oranienbaum&display=swap');
 html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+h5,h6{
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: white;
+}
+h5{
+    font-weight: 600;
 }
 /* TITLE */
 #title{
@@ -99,13 +108,13 @@ html,body{
     margin-top: 13.802vh;
 }
 
+/* ABOUT */
 #about{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(to right, #93947b, #e7e9bb); */
-    /* backdrop-filter: blur(80px); */
+    background: linear-gradient(to right, #93947b7e, #e7e9bbd2);
 }
 #about h1{
     font-family: 'Cinzel', serif;
@@ -114,6 +123,67 @@ html,body{
     font-size: 10.513vw;
     filter: drop-shadow(9px 9px 3px rgba(0, 0, 0, 0.274));
     
+}
+
+/* PROJECT */
+#projects{
+    background: rgb(82, 82, 82);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.gallery-object{
+    flex-basis: 47%;
+    background-color: rgba(231, 222, 138, 0);
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+/* Transition on image Hover */
+.gallery-object-bottom {
+    transition: transform 700ms ease-in-out;
+}
+.gallery-object-image:hover + .gallery-object-bottom{
+    transform: translateY(30%);
+}
+.gallery-object-image:hover::after{
+    border-radius: 10% 0 0 0;
+}
+
+
+.gallery img{
+    box-sizing: border-box;
+    width: 100%;
+}
+/* Making the border Top Part */
+.gallery-object-image{
+    position: relative;
+}
+.gallery-object-image::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    opacity: 1;
+    border: solid rgb(245, 245, 245);
+    border-width: 1px 3px 0;
+    border-radius: 0 10% 0 0;
+    transition: all 700ms ease-in-out;
+}
+/* Margins of IMAGE HEADING (h5) */
+.image-title{
+    margin: 12px 0px 12px 30px;
+}
+/* Margins of image info(h6) */
+.image-info{
+    margin: 0px 0px 50px 30px
 }
 
 /* Mobile Only */
@@ -126,5 +196,10 @@ html,body{
     /* Changing Logo size for mobiles */
     .cg-logo{
         width: 18vw;
+    }
+
+    /* To show one coloumn in mobile view */
+    .gallery-object{
+        flex-basis: 100%;
     }
 }
