@@ -3,9 +3,15 @@ document.querySelector(".arrow-up").addEventListener('click',()=>{
 })
 // Adding multiple mock images in gallery
 galleryObj = document.querySelectorAll(".gallery-object")[0];
-for(let i=0;i<10;i++){
+TotalImages = 8;
+for(let i=0;i<TotalImages-1;i++){
     galleryObjElement = galleryObj.cloneNode(true);
     document.querySelector(".gallery").appendChild(galleryObjElement);
+}
+// Adding img src to images
+galleryImages = document.querySelectorAll(".gallery-object img");
+for(let i=0;i<TotalImages;i++){
+    galleryImages[i].src = `./images/${i+1}.png`;
 }
 
 
