@@ -146,6 +146,7 @@ h5{
 
 /* Transition on image Hover */
 .gallery-object-bottom {
+    position: relative;
     transition: transform 700ms ease-in-out;
 }
 .gallery-object-image:hover + .gallery-object-bottom{
@@ -207,7 +208,26 @@ h5{
     top: 50%;
     left: calc(100% + 5px);;
 }
-
+/* Vertial Bar Left */
+.gallery-object-bottom::before{
+    content: '';
+    position: absolute;
+    height: 45px;
+    width: 1px;
+    background-color: #fff;
+    top: -20px;
+    left: 20px;
+}
+/* Vertical Bar Right */
+.gallery-object-bottom::after{
+    content: '';
+    position: absolute;
+    height: 45px;
+    width: 1px;
+    background-color: #fff;
+    top: -20px;
+    right: 20px;
+}
 
 /* Margins of image info(h6) */
 .image-info{
