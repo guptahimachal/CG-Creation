@@ -128,7 +128,7 @@ h5{
 /* PROJECT */
 #projects{
     background: rgb(82, 82, 82);
-    background:url("../images/projectBG2.jpg") center center no-repeat;
+    background:url("../images/projectBG1.jpg") center center no-repeat;
     background-size: cover;
     background-attachment:fixed;
 }
@@ -139,7 +139,7 @@ h5{
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 90%;
+    width: 100%;
 }
 .gallery-object{
     flex-basis: 47%;
