@@ -131,24 +131,51 @@ h5{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(to right, #93947b7e, #e7e9bbd2);
+    
 }
 #about h1{
     font-family: 'Cinzel', serif;
-    word-spacing: 1rem;
-    /* Making font size 3rem/48px for 1366px width = 10.513vw */
     font-size: 102px;
-    filter: drop-shadow(9px 9px 3px rgba(0, 0, 0, 0.274));
-    
+    filter: drop-shadow(0.658vw 0.658vw 0.219vw rgba(0, 0, 0, 0.274));
 }
 .about-content{
+    position: relative;
     flex-basis: 50%;
 }
-.about-content{
+.about-content p{
     font-family: 'Oranienbaum', serif;
     text-align: justify;
     font-size: 1.2rem;
-    position: relative;
+    margin: 16px 0;
+}
+/* Top Line and bottom line*/
+.about-content::before , .about-content::after{
+    content: ' ';
+    background-color: rgb(138, 138, 138);
+    height: 42%;
+    width: 2px;
+    position: absolute;
+}
+/* Top Line */
+.about-content::before{
+    top: 0;
+    left: -7%;
+}
+/* Bottom Line */
+.about-content::after{
+    bottom: 0;
+    left: -7%;
+}
+/* Middle Circle */
+.about-content .circle{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    transform: translate(-50%, -54%);
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 50%;
 }
 
 /* PROJECT */
@@ -281,6 +308,7 @@ h5{
     .gallery-object{
         flex-basis: 100%;
     }
+    /* ABOUT SECTION IN MOBILE */
     #about{
         flex-direction: column;
         height: auto;
@@ -298,7 +326,10 @@ h5{
     .about-content{
         padding: 0 30px;
         line-height: 1.2rem;
-        margin-top: 120px;
+        margin-top: 116px;
+    }
+    .about-content p{
+        font-size: 0.9rem;
     }
 
 
