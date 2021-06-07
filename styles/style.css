@@ -93,7 +93,24 @@ h5{
     filter: drop-shadow(9px 9px 2px rgba(0, 0, 0, 0.274));
     cursor: pointer;
     backdrop-filter: blur(10px);
-    background: rgba(54, 52, 52, 0.329);
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0), 40% ,rgba(255, 255, 255, 0.356),60%,rgba(255, 255, 255, 0));
+    /* background: linear-gradient(80deg,transparent,rgba(255, 255, 255, 0.267),transparent); */
+    background-repeat: no-repeat;
+    background-position: -0% -0%;
+    background-size: 600%;
+
+    /* perspective: 1500px; */
+    transform: perspective(400px);
+    /* transform-origin: left; */
+    transform-style: preserve-3d;
+    transition: background-position 0.7s ease , transform 0.7s ease-in-out;
+}
+.cg-logo:hover{
+    background-position: 100% 100%;
+    transition-duration: 0.7s;
+    transform: rotate3d(1,-2,0,-20deg);
+    /* transform: translateZ(100px); */
+    transition: background-position 0.7s ease , transform 0.7s ease-in-out;
 }
 
 
