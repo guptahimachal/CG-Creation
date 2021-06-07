@@ -16,19 +16,39 @@ h5{
 #title{
     /* BG image of opening  */
     /* background: url("../images/background.jpg") grey; */
-    animation: example 40s ease-in-out 0s infinite;
+    animation: example 60s ease-in-out 0s infinite;
     /* background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover; */
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
 @keyframes example {
-    0%,100%   {background: url("../images/bg1.jpg"); background-size: 1366px 768px; background-position: center;}
-    20%  {background: url("../images/bg2.jpg"); background-size: 1366px 768px; background-position: center;}
-    40%  {background: url("../images/bg3.jpg"); background-size: 1366px 768px; background-position: center;}
-    60%  {background: url("../images/bg4.jpg"); background-size: 1366px 768px; background-position: center;}
-    80% {background: url("../images/bg5.jpg"); background-size: 1366px 768px; background-position: center;}
+    0%,100%   {
+        background: url("../images/bg1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+    20%  {
+        background: url("../images/bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+    40%  {
+        background: url("../images/bg3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+    60%  {
+        background: url("../images/bg4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+    80% {
+        background: url("../images/bg5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
 }
 
 /* Making the x and y padding of navbar equal */
@@ -59,6 +79,8 @@ h5{
     font-size: 0.88rem;
     letter-spacing: 3px;
     color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.836);
+    
 }
 
 /* Adding transition in dropdown of project in menubar */
@@ -123,6 +145,9 @@ h5{
     /* Making font size 3rem/48px for 1366px width */
     font-size: 3.513vw;
     margin-top: 13.802vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.836);
+    /* filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.699)); */
+    
 }
 
 /* ABOUT */
@@ -175,15 +200,31 @@ h5{
     left: -7%;
     transform: translate(-50%, -54%);
     border: 1px solid rgb(138, 138, 138);
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    animation: morphing 10s ease-in 0s infinite;
+}
+
+@keyframes circle-radius-anim {
+    0%   { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;}
+    25%  { border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;}
+    50%  { border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;}
+    75%  { border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;}
+    100% { border-radius: 41% 59% 50% 50% / 50% 29% 71% 50% ;}
+}
+@keyframes morphing {
+    0% ,100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
+    25% {  border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;}
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;}
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;}
 }
 
 /* PROJECT */
 #projects{
     background: rgb(82, 82, 82);
-    background:url("../images/projectBG1.jpg") center center no-repeat;
+    background:url("../images/projectBG3.jpg") center center no-repeat;
     background-size: cover;
     background-attachment:fixed;
+    background-position: center center;
 }
 .gallery{
     display: flex;
@@ -197,7 +238,7 @@ h5{
 .gallery-object{
     flex-basis: 47%;
     background-color: rgba(253, 253, 253, 0.068);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(3px);
     margin: 10px 0px;
     cursor: pointer;
 }
