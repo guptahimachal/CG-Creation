@@ -20,7 +20,6 @@ for(let i=0;i<TotalImages;i++){
 // according to image title
 // Done by appendin a new style sheet    
 function addHorizontalBar() {
-    alert('ok');
     var style = document.createElement('style');
     style.type = 'text/css';
     style.innerHTML = ' ';
