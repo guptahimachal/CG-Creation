@@ -11,6 +11,7 @@ for(let i=0;i<TotalImages-1;i++){
 // Adding img src to images
 galleryImages = document.querySelectorAll(".gallery-object img");
 for(let i=0;i<TotalImages;i++){
+    // galleryImages[i].loading = 'lazy';
     galleryImages[i].src = `./images/${i+1}.png`;
 }
 

@@ -5,19 +5,25 @@
     --armLength: 40px;
 }
 .arrow-up {
-    transform: rotate(180deg) translate(50%);
+    transform: rotate(180deg);
     height: var(--btnSize);
     width: var(--btnSize);
-    /* display: block; */
+    display: block;
     border: 1px solid var(--btnColor);
     
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
     overflow: hidden;
 
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+
+@media only screen and (max-height:567px){
+    .arrow-up{
+        margin-top: 21vh;
+    }
 }
 
 .arrow-slide {

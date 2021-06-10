@@ -15,12 +15,39 @@ h5{
 /* TITLE */
 #title{
     /* BG image of opening  */    
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* animation: example 60s ease 0.5s infinite; */
-    animation: example 20s infinite;
+    /* animation: example 20s infinite; */
+    
+    transition: background 2s;
+
+    -webkit-animation: example 20s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: example 20s;
+    -moz-animation-iteration-count: infinite;
+    animation: example 20s;
+    animation-iteration-count: infinite;
+
+    padding-bottom: 24px;
+}
+
+@-webkit-keyframes example {
+    0%,100%   {background: url("../images/bg1.jpg");background-attachment:fixed;}
+    20%  {background: url("../images/bg2.jpg");background-attachment:fixed;}
+    40%  {background: url("../images/bg3.jpg");background-attachment:fixed;}
+    60%  {background: url("../images/bg4.jpg");background-attachment:fixed;}
+    80%  {background: url("../images/bg5.jpg");background-attachment:fixed;}
+}
+
+@-moz-keyframes example {
+    0%,100%   {background: url("../images/bg1.jpg");background-attachment:fixed;}
+    20%  {background: url("../images/bg2.jpg");background-attachment:fixed;}
+    40%  {background: url("../images/bg3.jpg");background-attachment:fixed;}
+    60%  {background: url("../images/bg4.jpg");background-attachment:fixed;}
+    80%  {background: url("../images/bg5.jpg");background-attachment:fixed;}
 }
 
 @keyframes example {
