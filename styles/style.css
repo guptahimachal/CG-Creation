@@ -14,41 +14,21 @@ h5{
 }
 /* TITLE */
 #title{
-    /* BG image of opening  */
-    /* background: url("../images/background.jpg") grey; */
-    animation: example 60s ease-in-out 0s infinite;
-    /* background-position: center center;
-    background-size: cover; */
-    background-repeat: no-repeat;
+    /* BG image of opening  */    
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* animation: example 60s ease 0.5s infinite; */
+    animation: example 20s infinite;
 }
 
 @keyframes example {
-    0%,100%   {
-        background: url("../images/bg1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;}
-    20%  {
-        background: url("../images/bg2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;}
-    40%  {
-        background: url("../images/bg3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;}
-    60%  {
-        background: url("../images/bg4.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;}
-    80% {
-        background: url("../images/bg5.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;}
+    0%,100%   {background: url("../images/bg1.jpg");background-attachment:fixed;}
+    20%  {background: url("../images/bg2.jpg");background-attachment:fixed;}
+    40%  {background: url("../images/bg3.jpg");background-attachment:fixed;}
+    60%  {background: url("../images/bg4.jpg");background-attachment:fixed;}
+    80%  {background: url("../images/bg5.jpg");background-attachment:fixed;}
 }
 
 /* Making the x and y padding of navbar equal */
