@@ -9,189 +9,189 @@ galleryObj = document.querySelectorAll(".gallery-object")[0];
 articles = [
     {
       "id": 1,
-      "title": "Incredible Living Room – 3 bhk apartment",
+      "title": "Living Room – 3 BHK Apartment",
       "area": 286,
       "type": "Residential Interior"
     },
     {
       "id": 2,
+      "title": "Kids Room, Delhi",
+      "area": 28,
+      "type": "Residential Interior"
+    },
+    {
+      "id": 3,
       "title": "Elegant Classic Bedroom ",
       "area": 26,
       "type": "Residential Interior"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "2 BHK Apartment – New Delhi",
       "area": 96,
       "type": "Residential Interior"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Luxury Apartment",
       "area": 200,
       "type": "Residential Interior"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Minimal Bedrooom",
       "area": 30,
       "type": "Residential Interior"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Beige Living area with Kitchen",
-      "area": null,
+      "area": 50,
       "type": "Residential Interior"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Luxury Dinning Area",
       "area": 80,
       "type": "Residential Interior"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Modern Bedoom  ",
       "area": 30,
       "type": "Residential Interior"
     },
     {
-      "id": 9,
-      "title": "Yellow Themed Restaurant – New Delhi",
+      "id": 10,
+      "title": "Themed Restaurant –  Delhi",
       "area": 400,
       "type": "Commercial Interior"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Rustic Cafe – Mumbai",
       "area": 350,
       "type": "Commercial Interior"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "Elegant Bar - Mumbai",
       "area": 300,
       "type": "Commercial Interior"
     },
     {
-      "id": 12,
-      "title": "Exquisite Bathroom",
-      "area": null,
-      "type": "Residential Interior"
-    },
-    {
       "id": 13,
-      "title": "2BHK Apartment, Lined Edison, Mumbai",
-      "area": 86,
+      "title": "Exquisite Bathroom",
+      "area": 15,
       "type": "Residential Interior"
     },
     {
       "id": 14,
+      "title": "2BHK , Lined Edison, Mumbai",
+      "area": 86,
+      "type": "Residential Interior"
+    },
+    {
+      "id": 15,
       "title": "Menon Residence, Mumbai",
       "area": 85,
       "type": "Residential Interior"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "Dutta Residence, Mumbai",
       "area": 86,
       "type": "Residential Interior"
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "4 BHK Residence, Mumbai",
       "area": 400,
       "type": "Residential Interior"
     },
     {
-      "id": 17,
-      "title": "Bar For Luxuroius Penthouse, New Delhi",
+      "id": 18,
+      "title": "Bar For  Penthouse, New Delhi",
       "area": 210,
       "type": "Residential Interior"
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Shah Residence, Mumbai",
       "area": 110,
       "type": "Residential Interior"
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "Shardul Residence, Mumbai",
       "area": 90,
       "type": "Residential Interior"
     },
     {
-      "id": 20,
+      "id": 21,
       "title": "3 BHK Apartment, Mumbai",
       "area": 80,
       "type": "Residential Interior"
     },
     {
-      "id": 21,
+      "id": 22,
       "title": "Exclusive House Exterior",
       "area": 91,
       "type": "Architecture Design"
     },
     {
-      "id": 22,
+      "id": 23,
       "title": "Triveni Marbles, Agra",
       "area": 100,
       "type": "Architecture Design"
     },
     {
-      "id": 23,
+      "id": 24,
       "title": "3 BHK Apartment, Gurugram",
       "area": 140,
       "type": "Residential Interior"
     },
     {
-      "id": 24,
+      "id": 25,
       "title": "3 BHK Apartment, Gurugram",
       "area": 110,
       "type": "Residential Interior"
     },
     {
-      "id": 25,
+      "id": 26,
       "title": "3 BHK Apartment, Vasant Kunj",
       "area": 130,
       "type": "Residential Interior"
     },
     {
-      "id": 26,
+      "id": 27,
       "title": "Mohit J Residence, Mumbai",
       "area": 84,
       "type": "Architecture Design"
     },
     {
-      "id": 27,
+      "id": 28,
       "title": "Jungle Themed Café, Saket",
       "area": 80,
       "type": "Commercial Interior"
     },
     {
-      "id": 28,
+      "id": 29,
       "title": "Kids Nursery, Delhi",
       "area": 285,
       "type": "Commercial Interior"
     },
     {
-      "id": 29,
+      "id": 30,
       "title": "Chhabra Farmhouse",
       "area": 400,
       "type": "Residential Interior"
     },
     {
-      "id": 30,
+      "id": 31,
       "title": "Palam Vihar Residence",
       "area": 267,
       "type": "Residential Interior"
-    },
-    {
-      "id": null,
-      "title": "",
-      "area": null,
-      "type": ""
     }
 ];
 // Adding details of First image
@@ -258,7 +258,7 @@ articleCount = [
   
 document.querySelectorAll('.gallery-object').forEach( galleryObj => {
     galleryObj.addEventListener('click',(event)=>{
-        console.log(galleryObj);
+        console.log(galleryObj.querySelector("img"));
         
         // Adding the IMAGE LIGHT BOX
         const lightBox = document.createElement('div');
@@ -268,6 +268,6 @@ document.querySelectorAll('.gallery-object').forEach( galleryObj => {
         document.body.appendChild(lightBox);
 
 
-        document.querySelector("#lightbox").classList.add("active");
+        // document.querySelector("#lightbox").classList.add("active");
     })
 });

@@ -292,7 +292,9 @@ h5{
     display: inline-block;
     position: relative;
 }
-
+.image-title h5{
+    color: #CBA37C;
+}
 
 /* MAKING THE HORIZONTL BAR OF IMAGE TITLE */
 /* Horizontal Bar Left */
@@ -399,6 +401,11 @@ h5{
     .about-content p{
         font-size: 0.9rem;
     }
-
-
+    .image-title h5 , .image-info h6{
+        font-size: 4.40vw ;
+    }
+    .gallery-object-bottom::before,.gallery-object-bottom::after {
+        /* height: 43px; */
+        height: calc(33px + 2.20vw);
+    }
 }
