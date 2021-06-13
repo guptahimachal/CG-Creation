@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "title": "Incredible Living Room – 3 bhk apartment",
+    "area": 286,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 2,
+    "title": "Elegant Classic Bedroom ",
+    "area": 26,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 3,
+    "title": "2 BHK Apartment – New Delhi",
+    "area": 96,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Apartment",
+    "area": 200,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 5,
+    "title": "Minimal Bedrooom",
+    "area": 30,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 6,
+    "title": "Beige Living area with Kitchen",
+    "area": null,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 7,
+    "title": "Luxury Dinning Area",
+    "area": 80,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 8,
+    "title": "Modern Bedoom  ",
+    "area": 30,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 9,
+    "title": "Yellow Themed Restaurant – New Delhi",
+    "area": 400,
+    "type": "Commercial Interior"
+  },
+  {
+    "id": 10,
+    "title": "Rustic Cafe – Mumbai",
+    "area": 350,
+    "type": "Commercial Interior"
+  },
+  {
+    "id": 11,
+    "title": "Elegant Bar - Mumbai",
+    "area": 300,
+    "type": "Commercial Interior"
+  },
+  {
+    "id": 12,
+    "title": "Exquisite Bathroom",
+    "area": null,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 13,
+    "title": "2BHK Apartment, Lined Edison, Mumbai",
+    "area": 86,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 14,
+    "title": "Menon Residence, Mumbai",
+    "area": 85,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 15,
+    "title": "Dutta Residence, Mumbai",
+    "area": 86,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 16,
+    "title": "4 BHK Residence, Mumbai",
+    "area": 400,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 17,
+    "title": "Bar For Luxuroius Penthouse, New Delhi",
+    "area": 210,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 18,
+    "title": "Shah Residence, Mumbai",
+    "area": 110,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 19,
+    "title": "Shardul Residence, Mumbai",
+    "area": 90,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 20,
+    "title": "3 BHK Apartment, Mumbai",
+    "area": 80,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 21,
+    "title": "Exclusive House Exterior",
+    "area": 91,
+    "type": "Architecture Design"
+  },
+  {
+    "id": 22,
+    "title": "Triveni Marbles, Agra",
+    "area": 100,
+    "type": "Architecture Design"
+  },
+  {
+    "id": 23,
+    "title": "3 BHK Apartment, Gurugram",
+    "area": 140,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 24,
+    "title": "3 BHK Apartment, Gurugram",
+    "area": 110,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 25,
+    "title": "3 BHK Apartment, Vasant Kunj",
+    "area": 130,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 26,
+    "title": "Mohit J Residence, Mumbai",
+    "area": 84,
+    "type": "Architecture Design"
+  },
+  {
+    "id": 27,
+    "title": "Jungle Themed Café, Saket",
+    "area": 80,
+    "type": "Commercial Interior"
+  },
+  {
+    "id": 28,
+    "title": "Kids Nursery, Delhi",
+    "area": 285,
+    "type": "Commercial Interior"
+  },
+  {
+    "id": 29,
+    "title": "Chhabra Farmhouse",
+    "area": 400,
+    "type": "Residential Interior"
+  },
+  {
+    "id": 30,
+    "title": "Palam Vihar Residence",
+    "area": 267,
+    "type": "Residential Interior"
+  },
+  {
+    "id": null,
+    "title": "",
+    "area": null,
+    "type": ""
+  }
+ ]
