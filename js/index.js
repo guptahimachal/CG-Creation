@@ -205,6 +205,7 @@ for(let i=0;i<TotalImages-1;i++){
     galleryObjElement.querySelector(".title").innerHTML = articles[i+1]['title'];
     galleryObjElement.querySelector(".area").innerHTML = articles[i+1]['area'];
     galleryObjElement.querySelector(".type").innerHTML = articles[i+1]['type'];
+    galleryObjElement.dataset.id = i+2;
     document.querySelector(".gallery").appendChild(galleryObjElement);
 }
 // Adding img source to Remaining Gallery item 
@@ -258,16 +259,26 @@ articleCount = [
   
 document.querySelectorAll('.gallery-object').forEach( galleryObj => {
     galleryObj.addEventListener('click',(event)=>{
-        console.log(galleryObj.querySelector("img"));
+
         
+        i = galleryObj.dataset.id;
         // Adding the IMAGE LIGHT BOX
-        const lightBox = document.createElement('div');
+        lightBox = document.createElement('div');
         lightBox.id = 'lightbox'
         
+        imgView = document.createElement('img');
+        imgView.src = "./images/THUMBNAILS/" + i + "/1.jpg";
+        lightBox.appendChild(imgView);
         
         document.body.appendChild(lightBox);
 
 
-        // document.querySelector("#lightbox").classList.add("active");
+        document.querySelector("#lightbox").classList.add("active");
     })
 });
+
+window.addEventListener('keydown' , (event)=>{
+  // Exiting Image Lightbox on escape
+  if(event.keyCode == 27)
+  document.querySelector("#lightbox").classList.remove("active");
+})

@@ -357,7 +357,8 @@ h5{
 }
 
 #lightbox.active{
-    display: block;
+    display: grid;
+    place-content: center;
 }
 
 
