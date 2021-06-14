@@ -357,10 +357,65 @@ h5{
 }
 
 #lightbox.active{
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#lightbox img{
+    border: 1px solid red;
+    /* width: 819px; */
+    height: auto;
+    max-width: 80%;
+}
+
+/* Slider Buttons */
+.slider-btns {
+	position: absolute;
+    height: 7.320vw; width: 7.320vw;
+	margin: 0;   
+    background: rgba(255, 255, 255, 0.096);
+	border: 1px solid rgba(0, 0, 0, 0.226);
+    transition: all 70ms ease-in-out;
+    cursor: pointer;
+}
+.slider-btns.left{
+    left: 1%;
+    border-radius: 80% 20% 20% 80% / 50% 50% 50% 50% ;
+}
+.slider-btns.right{
+    right: 1%;
+    border-radius: 20% 80% 80% 20% / 50% 50% 50% 50% ;
+}
+.arrow {
+    position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+    height: 1.940vw; width: 1.940vw;
+	border: 5px solid rgba(255, 255, 255, 0.623);
+    border-radius: 10% 10% 83% 16% / 86% 10% 10% 15% ;
+    border-width: 0 0 0.239vw 0.239vw;
+}
+.slider-btns.left .arrow{
+    transform: rotate(45deg);
+}
+.slider-btns.right .arrow{
+    transform: rotate(225deg);
+}
+.slider-btns:hover{
+    background: rgba(255, 255, 255, 0.196);
+}
+.slider-btns:active{
+    /* height: 90px; width: 90px; */
+    height: 6.588vw; width: 6.588vw;
+}
+.slider-btns.left:active{
+    border-radius: 93% 7% 7% 93% / 50% 50% 50% 50%;
+}
+.slider-btns.right:active{
+    border-radius: 7% 93% 93% 7% / 50% 50% 50% 50%;
+}
 
 
 /* Mobile Only */

@@ -256,23 +256,20 @@ articleCount = [
     [ '28', 2 ], [ '29', 2 ], [ '30', 6 ],
     [ '31', 5 ]
   ]
+
   
+
+// Adding the IMAGE LIGHT BOX
+
+lightBox = document.querySelector("#lightbox");
+imgView = lightBox.querySelector("img");
+
+var curArticle;
+var totalsubArticle;  
 document.querySelectorAll('.gallery-object').forEach( galleryObj => {
     galleryObj.addEventListener('click',(event)=>{
-
-        
-        i = galleryObj.dataset.id;
-        // Adding the IMAGE LIGHT BOX
-        lightBox = document.createElement('div');
-        lightBox.id = 'lightbox'
-        
-        imgView = document.createElement('img');
-        imgView.src = "./images/THUMBNAILS/" + i + "/1.jpg";
-        lightBox.appendChild(imgView);
-        
-        document.body.appendChild(lightBox);
-
-
+        curArticle = galleryObj.dataset.id;
+        imgView.src = "./images/THUMBNAILS/" + curArticle + "/1.jpg";        
         document.querySelector("#lightbox").classList.add("active");
     })
 });
