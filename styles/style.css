@@ -377,7 +377,7 @@ h5{
 	margin: 0;   
     background: rgba(255, 255, 255, 0.096);
 	border: 1px solid rgba(0, 0, 0, 0.226);
-    transition: all 70ms ease-in-out;
+    transition: all 40ms ease-in-out;
     cursor: pointer;
 }
 .slider-btns.left{
@@ -417,6 +417,43 @@ h5{
     border-radius: 7% 93% 93% 7% / 50% 50% 50% 50%;
 }
 
+/* CLOSE BUTTON for Image Carousel */
+.close {
+    position: absolute;
+    right: 2vh;
+    top: 2vh;
+    width: 5.468vh;
+    height: 5.468vh;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.1s ease-out;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 2.604vh;
+    content: ' ';
+    height: 5.598vh;
+    width: 0.270vh;
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 50%; */
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transition: transform 40ms ease-in-out;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+.close:active::before{
+    transform: rotate(60deg);
+}
+.close:active::after{
+    transform: rotate(-60deg);
+}
 
 /* Mobile Only */
 @media only screen and (max-width:700px){
