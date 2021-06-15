@@ -317,5 +317,6 @@ window.addEventListener('keydown' , (event)=>{
   document.querySelector("#lightbox").classList.remove("active");
 })
 document.querySelector(".close").addEventListener('click', ()=>{
+//   document.querySelector("#lightbox").classList.add("inactive");
   document.querySelector("#lightbox").classList.remove("active");
 });

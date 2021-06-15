@@ -29,7 +29,13 @@
         }
 
         /* #4B4B4B  0%,#464646  10%,#424242  20%,#3D3D3D  30%,#393939  40%,#343434  50%,#2F2F2F  60%,#2B2B2B  70%,#262626  80%,#222222  90%,#1D1D1D  100%)  */
+        html{
+            /* display: block; */
+            /* min-height: 100vh; */
+        }
         body {
+            position: relative;
+            min-height: 100vh;
             background: #3f3f3f;
             background-image: -webkit-radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
             background-image: -moz-radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
@@ -38,15 +44,20 @@
             /* background-blend-mode: overlay; */
             color: white;
         }
-
+        #about{
+            
+        }
         #about h1 {
+            font-size: 90px;
             padding-right: 40px;
         }
-
-        #about p {
-            font-family: inherit;
+        #about p,#about h4,#about ul{
+            font-family: 'Oranienbaum', serif;
         }
-
+        #about li{
+            letter-spacing: 1px;
+            word-spacing: 1px;
+        }
         img {
             position: absolute;
             margin: 15px;
@@ -54,6 +65,48 @@
             z-index: 2;
         }
 
+        .back-to-home{
+            position: absolute;            
+            width: 70px;
+            height: 70px;
+            border: 1px solid rgb(255, 255, 255) ;
+            border-radius: 100%;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,rgba(255, 255, 255, 0), 40% ,rgba(255, 255, 255, 0.356),60%,rgba(255, 255, 255, 0));
+            background-position: 0% 0%;
+            background-size: 600%;
+            transition: background-position 0s ease-in-out;
+        }
+        .back-to-home:hover{
+            background-position: 100% 100%;
+            transition: background-position 0.8s ease-in-out;
+        }
+        .back-to-home .upperArrow,.back-to-home .lowerArrow{
+            position: absolute;
+            background: rgb(255, 255, 255);
+            width: 50%;
+            height: 2px;
+            top: 50%;
+            left: 25%;
+            transform-origin: left;
+            transition: transform 0.2s ease-in-out,left 0.2s ease-in-out;
+        }
+        .back-to-home .upperArrow{
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        .back-to-home .lowerArrow{
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .back-to-home:active .upperArrow{
+            left: 20%;
+            transform: translateY(-50%) rotate(-35deg);
+        }
+        .back-to-home:active .lowerArrow{
+            left: 20%;
+            transform: translateY(-50%) rotate(35deg);
+        }
 
         .waves {
             position: absolute;
@@ -68,10 +121,6 @@
         }
 
         /* Animation */
-
-        .wave-container {
-            position: relative;
-        }
 
         .parallax>use {
             animation: move-forever 60s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -120,12 +169,27 @@
                 height: 40px;
                 min-height: 40px;
             }
+            #about h1 {
+                font-size: 50px;
+            }
+            .back-to-home{
+                z-index: 999;
+                top: initial;
+                bottom: 20px;
+                right: 20px;
+                transform-origin: bottom right;
+                transform: translateY(0) scale(0.7);
+            }
         }
     </style>
 </head>
 
 <body>
     <a href="index.html"><img src="./images/logo.png" alt="" class="cg-logo"></a>
+    <a href="index.html" class="back-to-home">
+        <div class="upperArrow"></div>
+        <div class="lowerArrow"></div>
+    </a>
     <section id="about">
         <h1>SERVICES</h1>
         <div class="about-content">
@@ -143,6 +207,9 @@
                 <li>Consulting</li>
                 <li>Branding</li>
                 <li>Furniture Design</li>
+            </ul>
+            <h4>Working Principles :</h4>
+            <ul>
                 <li>Calculating the project's approximate budget at the first meeting</li>
                 <li>Setting a task and developing a concept</li>
                 <li>Compiling a detailed technical task before designing</li>
