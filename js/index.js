@@ -265,17 +265,52 @@ lightBox = document.querySelector("#lightbox");
 imgView = lightBox.querySelector("img");
 
 var curArticle;
+var curSubArticle;
 var totalsubArticle;  
 document.querySelectorAll('.gallery-object').forEach( galleryObj => {
     galleryObj.addEventListener('click',(event)=>{
         curArticle = galleryObj.dataset.id;
+		curSubArticle = 1;
+        totalsubArticle = articleCount[curArticle-1][1];
+		document.querySelector(".display .cur").innerHTML = curSubArticle;
+		document.querySelector(".display .total").innerHTML = totalsubArticle;
         imgView.src = "./images/THUMBNAILS/" + curArticle + "/1.jpg";        
         document.querySelector("#lightbox").classList.add("active");
     })
 });
 
+function nextSubArticle() {
+	if(curSubArticle == totalsubArticle)
+		return;
+	curSubArticle++;
+	document.querySelector(".display .cur").innerHTML = curSubArticle;
+	imgView.src = "./images/THUMBNAILS/" + curArticle + "/"+ curSubArticle +".jpg";
+}
+function prevSubArticle() {
+	if(curSubArticle == 1)
+		return;
+	curSubArticle--;
+	document.querySelector(".display .cur").innerHTML = curSubArticle;
+	imgView.src = "./images/THUMBNAILS/" + curArticle + "/"+ curSubArticle +".jpg";
+}
+document.querySelector(".slider-btns.right").addEventListener('click',nextSubArticle);
+document.querySelector(".slider-btns.left").addEventListener('click',prevSubArticle);
 window.addEventListener('keydown' , (event)=>{
-  // Exiting Image Lightbox on escape
+	if(event.keyCode == 39)
+		nextSubArticle();
+})
+window.addEventListener('keydown' , (event)=>{
+	if(event.keyCode == 37)
+		prevSubArticle();
+})
+
+
+
+// Exiting Image Lightbox on escape and click on close btn
+window.addEventListener('keydown' , (event)=>{
   if(event.keyCode == 27)
   document.querySelector("#lightbox").classList.remove("active");
 })
+document.querySelector(".close").addEventListener('click', ()=>{
+  document.querySelector("#lightbox").classList.remove("active");
+});

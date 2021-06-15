@@ -364,7 +364,6 @@ h5{
 }
 
 #lightbox img{
-    border: 1px solid red;
     /* width: 819px; */
     height: auto;
     max-width: 80%;
@@ -453,6 +452,15 @@ h5{
 }
 .close:active::after{
     transform: rotate(-60deg);
+}
+
+/* Display of current Subarticles */
+.display{
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+.display h4{
+    margin: 0;
 }
 
 /* Mobile Only */
