@@ -276,6 +276,8 @@ document.querySelectorAll('.gallery-object').forEach( galleryObj => {
 		document.querySelector(".display .total").innerHTML = totalsubArticle;
         imgView.src = "./images/THUMBNAILS/" + curArticle + "/1.jpg";        
         document.querySelector("#lightbox").classList.add("active");
+
+		
     })
 });
 
