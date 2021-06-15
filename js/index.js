@@ -2,7 +2,10 @@
 document.querySelector(".arrow-up").addEventListener('click',()=>{
     document.getElementById("about").scrollIntoView();
 })
-
+document.querySelector("#about-link").addEventListener('click',()=>{
+	console.log("a")
+    document.getElementById("about").scrollIntoView();
+})
 
 // Adding multiple images in gallery along with details
 galleryObj = document.querySelectorAll(".gallery-object")[0];
@@ -277,7 +280,7 @@ document.querySelectorAll('.gallery-object').forEach( galleryObj => {
         imgView.src = "./images/THUMBNAILS/" + curArticle + "/1.jpg";        
         document.querySelector("#lightbox").classList.add("active");
 
-		
+
     })
 });
 
