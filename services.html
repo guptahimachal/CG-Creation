@@ -28,17 +28,11 @@
             --endColor: #1d1d1d;
         }
 
-        /* #4B4B4B  0%,#464646  10%,#424242  20%,#3D3D3D  30%,#393939  40%,#343434  50%,#2F2F2F  60%,#2B2B2B  70%,#262626  80%,#222222  90%,#1D1D1D  100%)  */
         body {
             position: relative;
             min-height: 100vh;
-            background: #3f3f3f;
-            background-image: -webkit-radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
-            background-image: -moz-radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
-            background-image: -o-radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
-            background-image: radial-gradient(top, circle cover, #4B4B4B 0%, #464646 10%, #424242 20%, #3D3D3D 30%, #393939 40%, #343434 50%, #2F2F2F 60%, #2B2B2B 70%, #262626 80%, #222222 90%, #1D1D1D 100%);
-            /* background-blend-mode: overlay; */
-            color: white;
+            background: white;
+            color: black;
         }
 
         #about h1 {
@@ -63,12 +57,12 @@
             position: absolute;            
             width: 70px;
             height: 70px;
-            border: 1px solid rgb(255, 255, 255) ;
+            border: 1px solid rgb(0, 0, 0) ;
             border-radius: 100%;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
-            background: linear-gradient(135deg,rgba(255, 255, 255, 0), 40% ,rgba(255, 255, 255, 0.356),60%,rgba(255, 255, 255, 0));
+            background: linear-gradient(135deg,rgba(0, 0, 0, 0), 40% ,rgba(0, 0, 0, 0.356),60%,rgba(0, 0, 0, 0));
             background-position: 0% 0%;
             background-size: 600%;
             transition: background-position 0s ease-in-out;
@@ -79,7 +73,7 @@
         }
         .back-to-home .upperArrow,.back-to-home .lowerArrow{
             position: absolute;
-            background: rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
             width: 50%;
             height: 2px;
             top: 50%;
