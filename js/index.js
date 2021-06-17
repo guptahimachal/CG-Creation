@@ -323,11 +323,11 @@ document.querySelector(".close").addEventListener('click', ()=>{
 
 
 document.querySelector("#facebook").addEventListener('click',()=>{
-	window.open('https://www.facebook.com/CGCreationn/');
+	window.open('https://www.facebook.com/CGDesignns');
 });
 document.querySelector("#instagram").addEventListener('click',()=>{
-	window.open('https://www.instagram.com/urbandesign.lab/');
+	window.open('https://www.instagram.com/cg_designns/');
 });
 document.querySelector("#pinterest").addEventListener('click',()=>{
-	window.open('https://pin.it/2jEajPq');
+	window.open('https://in.pinterest.com/cg_designns/cg-designs/');
 });

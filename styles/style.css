@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Text&family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -18,7 +19,6 @@ h5{
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     /* animation: example 60s ease 0.5s infinite; */
     /* animation: example 20s infinite; */
     
@@ -51,11 +51,11 @@ h5{
 }
 
 @keyframes example {
-    0%,100%   {background: url("../images/bg1.jpg");background-attachment:fixed;}
-    20%  {background: url("../images/bg2.jpg");background-attachment:fixed;}
-    40%  {background: url("../images/bg3.jpg");background-attachment:fixed;}
-    60%  {background: url("../images/bg4.jpg");background-attachment:fixed;}
-    80%  {background: url("../images/bg5.jpg");background-attachment:fixed;}
+    0%,100%   {background: url("../images/bg1.jpg");background-attachment:fixed;background-position: center center;} 
+    20%  {background: url("../images/bg2.jpg");background-attachment:fixed; background-position: center center;}
+    40%  {background: url("../images/bg3.jpg");background-attachment:fixed; background-position: center center;}
+    60%  {background: url("../images/bg4.jpg");background-attachment:fixed; background-position: center center;}
+    80%  {background: url("../images/bg5.jpg");background-attachment:fixed; background-position: center center;}
 }
 
 /* Making the x and y padding of navbar equal */
@@ -337,6 +337,9 @@ h5{
     top: -20px;
     right: 20px;
 }
+.gallery-object-bottom h5,.gallery-object-bottom h6{
+    font-family: 'PT Serif', serif;
+}
 
 /* Margins of image info(h6) */
 .image-info{
@@ -612,8 +615,8 @@ h5{
     .about-content p{
         font-size: 0.9rem;
     }
-    .image-title h5 , .image-info h6{
-        font-size: 4.40vw ;
+    .image-title h5 {
+        font-size: 4.40vw;
     }
     .gallery-object-bottom::before,.gallery-object-bottom::after {
         /* height: 43px; */
