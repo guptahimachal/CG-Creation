@@ -387,8 +387,10 @@ h5{
 }
 
 .contact-container .contact-text h5{
-    font-family: 'Crimson Text',serif;
+    font-family: 'PT Serif', serif;
+    font-size: 0.9rem;
     font-weight: 100;
+    margin: 5px 0;
 }
 :root{
     --iconHeight: 40px;
@@ -614,6 +616,9 @@ h5{
     }
     .about-content p{
         font-size: 0.9rem;
+    }
+    #projects , #contact-us{
+        background-position: left center;
     }
     .image-title h5 {
         font-size: 4.40vw;
