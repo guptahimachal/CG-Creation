@@ -320,3 +320,14 @@ document.querySelector(".close").addEventListener('click', ()=>{
 //   document.querySelector("#lightbox").classList.add("inactive");
   document.querySelector("#lightbox").classList.remove("active");
 });
+
+
+document.querySelector("#facebook").addEventListener('click',()=>{
+	window.open('https://www.facebook.com/CGCreationn/');
+});
+document.querySelector("#instagram").addEventListener('click',()=>{
+	window.open('https://www.instagram.com/urbandesign.lab/');
+});
+document.querySelector("#pinterest").addEventListener('click',()=>{
+	window.open('https://pin.it/2jEajPq');
+});

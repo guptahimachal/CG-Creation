@@ -226,7 +226,7 @@ h5{
 }
 
 /* PROJECT */
-#projects{
+#projects , #contact-us{
     background: rgb(82, 82, 82);
     background:url("../images/projectBG3.jpg") center center no-repeat;
     background-size: cover;
@@ -370,6 +370,85 @@ h5{
 #lightbox.inactive{
     /* animation: popin 1s ease-in-out forwards; */
 }
+
+/* CONTACT SECTION */
+.contact-container{
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.contact-container .contact-text h5{
+    font-family: 'Crimson Text',serif;
+    font-weight: 100;
+}
+:root{
+    --iconHeight: 40px;
+    --iconWidth: 40px;
+    --iconRadius: 5px;
+    --iconTransitionTime: 0.3s;
+}
+
+.contact-links .link-icons{
+    width: var(--iconWidth);
+    height: var(--iconHeight);
+    border-radius: var(--iconRadius);
+    transition: background-color var(--iconTransitionTime) ease-in;
+    cursor: pointer;
+}
+/* This is spacing between all contact icons */
+.contact-links *{
+    margin: 0 3px;
+}
+/* Making the margin of instagram icon 0 */
+.gradient img{
+    margin: 0;
+}
+
+#facebook:hover{
+    background-color: #3B5998;
+}
+
+/* For instagram */
+#instagram{
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    /* transform: translateX(-50%); */
+    /* margin-top: 7px; */
+}
+.gradient {
+    position: relative;
+    display: inline-block;
+    width: var(--iconWidth);
+    height: var(--iconHeight);
+    z-index: 1;
+    top: 16px;
+} 
+.gradient::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--iconRadius);
+    /*Final Gradient*/
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    z-index: -1;
+    transition: opacity var(--iconTransitionTime) ease-in-out;
+    opacity: 0;
+}
+.gradient:hover::before {
+    opacity: 1;
+}
+/* For Pintrest */
+#pinterest:hover{
+    background-color: #E60023;
+}
+
 @keyframes popout {
     from{
         width: 1%;
@@ -536,5 +615,10 @@ h5{
     .gallery-object-bottom::before,.gallery-object-bottom::after {
         /* height: 43px; */
         height: calc(33px + 2.20vw);
+    }
+    /* Contact section */
+    .contact-container{
+        flex-direction: column-reverse;
+        text-align: center;
     }
 }
