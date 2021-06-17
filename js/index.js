@@ -309,7 +309,9 @@ window.addEventListener('keydown' , (event)=>{
 		prevSubArticle();
 })
 
-
+document.querySelector("#navbarDropdown").addEventListener('click',()=>{
+  document.getElementById("projects").scrollIntoView();
+})
 
 // Exiting Image Lightbox on escape and click on close btn
 window.addEventListener('keydown' , (event)=>{
